@@ -6,32 +6,10 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
 cl = LINETCR.LINE()
-cl.login(token="EnHM8JxZ3Ydutyryg3qb.lh9WH2MI6ZxzRP9ZZtzUcW.2gGmELRSCaskXwe2twpd280tycv2T3Vo6WvHbPYwVWg=")
+cl.login(qr=True)
 cl.loginResult()
 
-ki = LINETCR.LINE()
-ki.login(token="EniWLZyg7M2xn7ZWLEi4.Taq4zRpoy8MaIjFbl09Fba.ZvAgOFZEGGWB1pNf6KQuYdtWXhbz+ahXwvqVNIS38I4=")
-ki.loginResult()
-
-ki2 = LINETCR.LINE()
-ki2.login(token="En6JnQYmSbud2UhirOB9.m+QWcDCzbafjVosqZ/m5kq.V8ZxtADEcZrvKSmOLmtrBtAkRuirBa7E4FYQ5PvQ5WA=")
-ki2.loginResult()
-
-ki3 = LINETCR.LINE()
-ki3.login(token="EnorFuNfQuWsL7Oao0O2.95DDfpXOzsm0FioN2vCdmG.qfm/65MnINdAiJp1WlrE7znBn5L9csSSWTSXCnryENA=")
-ki3.loginResult()
-
-ki4 = LINETCR.LINE()
-ki4.login(token="EnnKn17f1WU18KJ9Rp07.0PhcaDg6BmNNypOZPKzWPW.+GJZb3EHRlU1fyH3nsr7VuyimvVVFk2eaNB1D/uJEa4=")
-ki4.loginResult()
-
-ki5 = LINETCR.LINE()
-ki5.login(token="Endc3mRumZVeSpnJelUf.2Ad+jSMK5L577woncnuh7W.A2a8Q176BBlcqx1B8CsNW9+5IGsDvR4S1ki7LdQ86ZA=")
-ki5.loginResult()
-
-ki6 = LINETCR.LINE()
-ki6.login(token="EnC38ZGeAcP4PLCWWx52.rm2ylLXzJpoyheGEx9PgmG.iFhJ0UeAvr8gIAbFmVhoLn2OVs/WWOm21nEGeJ25s3w=")
-ki6.loginResult()
+ki = kk = kc = ky = cl 
 
 print u"login success"
 reload(sys)
@@ -114,7 +92,8 @@ helpMessage ="""       ꧁🍁✟ゆຸ۞のุს🍁꧂
    
 	        ⋆⋆[ ꧁🍁✟ゆຸ۞のุს🍁꧂ ]⋆⋆
 """
-KAC = [cl,ki,ki2,ki3,ki4,ki5,ki6]
+
+KAC=[cl,ki,kk,kc]
 KAB1 = ki.getProfile().mid
 KAB2 = ki2.getProfile().mid
 KAB3 = ki3.getProfile().mid
@@ -172,15 +151,15 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"Owner. Nhu : ID:0647706747",
+    'message':"รับติดตั้ง Selfboy http://line.me/ti/p/~0647706747 ",
     "lang":"JP",
-    "comment":"Owner. Nhu : ID:0647706747",
+    "comment":"รับติดตั้ง Selfbot http://line.me/ti/p/~0647706747 ",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"Nhu",
+    "cName":".....",
     "cNames":"",
     "blacklist":{},
     "wblacklist":False,
