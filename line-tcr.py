@@ -97,14 +97,8 @@ KAC=[cl,ki,kk,kc]
 KAB1 = ki.getProfile().mid
 mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
-ki2mid = ki2.getProfile().mid
-ki3mid = ki3.getProfile().mid
-ki4mid = ki4.getProfile().mid
-ki5mid = ki5.getProfile().mid
-ki6mid = ki6.getProfile().mid
 
-
-Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid]
+Bots=[mid,kimid,kkmid,kcmid
 admin = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
 staff = [""]
 adminMID = [""]
