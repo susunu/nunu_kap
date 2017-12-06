@@ -1,18 +1,37 @@
 # -*- coding: utf-8 -*-
 
-import TOBY
-from TOBY.lib.curve.ttypes import *
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
-cl = TOBY.LINE()
+cl = LINETCR.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
-ki = TOBY.LINE()
+ki = LINETCR.LINE()
 ki.login(qr=True)
 ki.loginResult()
 
+ki2 = LINETCR.LINE()
+ki2.login(qr=True)
+ki2.loginResult()
+
+ki3 = LINETCR.LINE()
+ki3.login(qr=True)
+ki3.loginResult()
+
+ki4 = LINETCR.LINE()
+ki4.login(qr=True)
+ki4.loginResult()
+
+ki5 = LINETCR.LINE()
+ki5.login(qr=True)
+ki5.loginResult()
+
+ki6 = LINETCR.LINE()
+ki6.login(qr=True)
+ki6.loginResult()
 print u"login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -86,13 +105,51 @@ helpMessage ="""    ==[─•✵✟۞ คำสั่งทั้งหมด۞�
 """
 helo=""
 
-KAC=[cl,ki]
+KAC=[cl,ki,ki2,ki3,ki4,ki5,ki6]
+KAB1 = ki.getProfile().mid
+KAB2 = ki2.getProfile().mid
+KAB3 = ki3.getProfile().mid
+KAB4 = ki4.getProfile().mid
+KAB5 = ki5.getProfile().mid
+KAB6 = ki6.getProfile().mid
 mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
-Bots = [mid,kimid,ki2mid]
-admsa = "u0f020150405fe23cace51efbbe590a76"
-admin = "u0f020150405fe23cace51efbbe590a76"
+ki3mid = ki3.getProfile().mid
+ki4mid = ki4.getProfile().mid
+ki5mid = ki5.getProfile().mid
+ki6mid = ki6.getProfile().mid
+Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid]
+admsa = "  u2c7f708769a2eb35d9ae9f73cd366e0b "
+admin = "  u2c7f708769a2eb35d9ae9f73cd366e0b "
+me = cl.getProfile().mid
+bot1 = cl.getProfile().mid
+main = cl.getProfile().mid
+kicker1 = ki.getProfile().mid
+kicker2 = ki2.getProfile().mid
+kicker3 = ki3.getProfile().mid
+kicker4 = ki4.getProfile().mid
+kicker5 = ki5.getProfile().mid
+kicker6 = ki6.getProfile().mid
+bots = me + kicker1
+protectname = []
+protecturl = []
+protection = []
+autocancel = {}
+autoinvite = []
+autoleaveroom = []
+admins = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
+Rx6 = ["u2c7f708769a2eb35d9ae9f73cd366e0b","ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","ud291c201d1ba6cc9e760fa33a64670a7","ud9a0ff26c9a4e65e7bed638d08d507ef","u44cd982e5c598cf3981c481e5fda4632","u44cd982e5c598cf3981c481e5fda4632","u61bbdbb69487e832635f2786144258d6"]
+Rx5 = ["u2c7f708769a2eb35d9ae9f73cd366e0b","ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","ud291c201d1ba6cc9e760fa33a64670a7","ud9a0ff26c9a4e65e7bed638d08d507ef","u44cd982e5c598cf3981c481e5fda4632","u44cd982e5c598cf3981c481e5fda4632","u61bbdbb69487e832635f2786144258d6"]
+Rx4 = ["u2c7f708769a2eb35d9ae9f73cd366e0b","ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","ud291c201d1ba6cc9e760fa33a64670a7","ud9a0ff26c9a4e65e7bed638d08d507ef","u44cd982e5c598cf3981c481e5fda4632","u44cd982e5c598cf3981c481e5fda4632","u61bbdbb69487e832635f2786144258d6"]
+Rx3 = ["u2c7f708769a2eb35d9ae9f73cd366e0b","ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","ud291c201d1ba6cc9e760fa33a64670a7","ud9a0ff26c9a4e65e7bed638d08d507ef","u44cd982e5c598cf3981c481e5fda4632","u44cd982e5c598cf3981c481e5fda4632","u61bbdbb69487e832635f2786144258d6"]
+Rx2 = ["u2c7f708769a2eb35d9ae9f73cd366e0b","ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","ud291c201d1ba6cc9e760fa33a64670a7","ud9a0ff26c9a4e65e7bed638d08d507ef","u44cd982e5c598cf3981c481e5fda4632","u44cd982e5c598cf3981c481e5fda4632","u61bbdbb69487e832635f2786144258d6"]
+Rx1 = ["u2c7f708769a2eb35d9ae9f73cd366e0b","ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","ud291c201d1ba6cc9e760fa33a64670a7","ud9a0ff26c9a4e65e7bed638d08d507ef","u44cd982e5c598cf3981c481e5fda4632","u44cd982e5c598cf3981c481e5fda4632","u61bbdbb69487e832635f2786144258d6"]
+Administrator = admins + Rx6 + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
+AS = Rx2 + Rx1 + Rx3 + Rx4 + Rx5 +Rx6 
+adminsA = admins + Rx3 + Rx6
+
+omikuzi = ["大吉","中吉","小吉","末吉","大凶","凶"]
 
 wait = {
     'contact':False,
