@@ -13,9 +13,8 @@ ki = LINETCR.LINE()
 ki.login(token=" EnqYzpDLmi1aisDbaiO2.olaGctHqncPMesxQr+hROG.C9fl/IZvYUJrFjr4LhtDwzNhL+Cd2l6l167imbMVCD0=")
 ki.loginResult()
 
-ki = kk = kc = ky = cl 
+ki = cl
 
-print u"login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -98,11 +97,9 @@ helpMessage ="""       ꧁🍁✟ゆຸ۞のุს🍁꧂
 """
 helo=""
 
-KAC=[cl,ki,kk,kc]
+KAC=[cl,ki]
 mid = cl.getProfile().mid
-Amid = kk.getProfile().mid
-Bmid = ki.getProfile().mid
-Cmid = kc.getProfile().mid
+Amid = ki.getProfile().mid
 Bots = [mid,Amid,Bmid,Cmid,]
 admin = ["u2c7f708769a2eb35d9ae9f73cd366e0b","u37fc905700e3e00fba10eff9736e0990"]
 staff = [""]
