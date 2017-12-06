@@ -6,11 +6,11 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token=" Enl7KC5KN3iLu2RLYhZ0.n+YqvWdJ4a/6eo+5C24jKa.QqD26hvjdOslSlooB2oim0iADzGYwZ2+rCQqxAJw9h8=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(qr=True)
+ki.login(token=" EnqYzpDLmi1aisDbaiO2.olaGctHqncPMesxQr+hROG.C9fl/IZvYUJrFjr4LhtDwzNhL+Cd2l6l167imbMVCD0=")
 ki.loginResult()
 
 ki = kk = kc = ky = cl 
@@ -104,7 +104,7 @@ Amid = kk.getProfile().mid
 Bmid = ki.getProfile().mid
 Cmid = kc.getProfile().mid
 Bots = [mid,Amid,Bmid,Cmid,]
-admin = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
+admin = ["u2c7f708769a2eb35d9ae9f73cd366e0b","u37fc905700e3e00fba10eff9736e0990"]
 staff = [""]
 adminMID = [""]
 
