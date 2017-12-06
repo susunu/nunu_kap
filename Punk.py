@@ -13,19 +13,15 @@ ki = TOBY.LINE()
 ki.login(qr=True)
 ki.loginResult()
 
-ki2 = TOBY.LINE()
-ki2.login(qr=True)
-ki2.loginResult()
-
 print u"login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""    ==[Street Punk Command]==
+helpMessage ="""    ==[─•✵✟۞ คำสั่งทั้งหมด۞✵•─]==
 
-􀜁􀇔􏿿 [Id]
-􀜁􀇔􏿿 [Mid]
-􀜁􀇔􏿿 [Me] 
+🐧 [Id]
+🐧 [Mid]
+🐧 [Me] 
 􀜁􀇔􏿿 [TL 「Text」
 􀜁􀇔􏿿 [MyName]
 􀜁􀇔􏿿 [I Gift]
@@ -82,8 +78,11 @@ helpMessage ="""    ==[Street Punk Command]==
 􀜁􀇔􏿿 [Cancelprotect on]
 􀜁􀇔􏿿 [Staff add/remove @]
          ✯==== Creator ====✯
-	
-  http://line.me/ti/p/~deadscreamer
+	─•✵✟۞ ℓℓஆՁゆຸ۞✵•─ 
+	  🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭
+	http://line.me/ti/p/ShgslAPyYS 
+
+  
 """
 helo=""
 
@@ -102,9 +101,9 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"Thanks For Add Me",
+    'message':"รับติดตัั้ง selfbot http://line.me/ti/p/ShgslAPyYS  ",
     "lang":"JP",
-    "comment":"Thanks For Add Me",
+    "comment":"รับติดตัั้ง selfbot http://line.me/ti/p/ShgslAPyYS  ",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
@@ -2541,9 +2540,9 @@ def autolike():
         if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
           try:    
             cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId']," ")
             ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
+            ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId']," https://line.me/ti/~deadscreamer")
             ki2.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
             ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
             ki3.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
