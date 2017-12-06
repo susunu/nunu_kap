@@ -9,9 +9,9 @@ cl = LINETCR.LINE()
 cl.login(token=" EnLeRNag7JCgiAuFOcw0.n+YqvWdJ4a/6eo+5C24jKa.soH6vYrhTzlm4LjMk/nnrSXnD5UF4RAEJ5Sp5P3XXuY= ")
 cl.loginResult()
 
-cl = LINETCR.LINE()
-cl.login(qr=True)
-cl.loginResult()
+ki = LINETCR.LINE()
+ki.login(qr=True)
+ki.loginResult()
 
 ki = kk = kc = ky = cl 
 
